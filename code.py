@@ -4,10 +4,10 @@ from math import sin, cos, sqrt, atan2, radians
 # approximate radius of earth in km
 R = 6373.0
 
-lat1 = radians(-72.2806942)
-lon1 = radians( 42.9275827)
-lat2 = radians(-72.2804904)
-lon2 = radians( 42.9268364)
+lat1 = radians(X1)
+lon1 = radians(Y1)
+lat2 = radians(X2)
+lon2 = radians(Y2)
 
 dlon = lon2 - lon1
 dlat = lat2 - lat1
@@ -17,5 +17,5 @@ c = 2 * atan2(sqrt(a), sqrt(1 - a))
 
 distance = R * c
 
-print("Result:", distance)
-print("Should be:", 278.546, "km")
+'''print("Result:", distance)
+print("Should be:", 278.546, "km")'''
